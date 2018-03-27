@@ -1,0 +1,205 @@
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    margin-bottom: 4px;
+}
+
+h1 {
+    padding-left: 40px;
+    padding-top: 20px;
+    font-family: 'Indie Flower', OpenSans, cursive;
+    font-size: 50pt;
+    color: deepskyblue;
+
+}
+
+p {
+    font-family: 'Indie Flower', OpenSans, cursive;
+    font-size: 20pt;
+    color: deepskyblue;
+}
+
+.push {
+    margin-left: auto;
+    margin-right: 20%;
+}
+
+.skybox{
+    background: linear-gradient(darkblue, deepskyblue);
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: -6;
+}
+
+.actualMoon{
+    width: 10em;
+    height: 10em;
+    position: absolute;
+    z-index: -5;
+    top: 7em;
+    right: 50%;
+    left: 50%;
+    background-color: lightblue;
+    border-radius: 50%;
+}
+
+.controls {
+    position: absolute;
+    z-index: +5;
+    top: 10px;
+    left: 2px;
+    padding: 20px;
+    margin: 20px;
+    width: 200px;
+    height: 30%;
+    background-color: lightblue;
+    border-radius: 3%;
+}
+
+.content {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.circleBase {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    border-radius: 50%;
+    background-color: black;
+    border: 3px solid #2C2C2C;
+
+}
+
+.shadow {
+    -moz-box-shadow:    inset 0 0 15px #000000;
+    -webkit-box-shadow: inset 0 0 15px #000000;
+    box-shadow:         inset 0 0 15px #000000;
+}
+
+.moon-shadow {
+    -moz-box-shadow:    inset 0 0 120px #ffffff;
+    -webkit-box-shadow: inset 0 0 120px #ffffff;
+    box-shadow:         inset 0 0 120px #ffffff;
+}
+
+.hill-shadow {
+    -moz-box-shadow:    inset 0 0 120px #1f3d0e;
+    -webkit-box-shadow: inset 0 0 120px #1f3d0e;
+    box-shadow:         inset 0 0 120px #1f3d0e;
+}
+
+
+.trafficLight {
+    height: 100%;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: +2;
+}
+
+.trafficLightBox {
+    width: 70px;
+    border: 2px solid darkgrey;
+    padding: 8px;
+    background-color: #373737;
+
+}
+
+.trafficLightPole {
+    width: 20px;
+    height: 300px;
+    padding-right: 2%;
+}
+
+.actualPole{
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    background-color: #373737;
+    border-right: 3px solid #2C2C2C;
+}
+
+.street {
+    width: 100%;
+    height: 30em;
+    position: relative;
+    z-index: -2;
+}
+
+.actualStreet {
+
+    width: 100%;
+    height: 35em;
+    position: absolute;
+    top: 25em;
+    bottom: 0;
+    background: linear-gradient(#1E1E1E, #2C2C2C);
+}
+
+.hills {
+    width: 100%;
+    height: 40em;
+    position: absolute;
+    z-index: -4;
+    top: 14em;
+    right: 0;
+    background-color: #22501e;
+    border-top-right-radius: 40%;
+    border-top-left-radius: 70%;
+}
+
+.leftHills{
+    width: 100%;
+    height: 40em;
+    position: absolute;
+    z-index: -3;
+    top: 12em;
+    left: 0;
+    background-color: #23761f;
+    border-top-right-radius: 70%;
+    border-top-left-radius: 30%;
+}
+
+.cloud {
+    width: 150px;
+    height: 34px;
+    position: absolute;
+    z-index: -3;
+    top: 4em;
+    left: 40%;
+    background-color: rgba(250, 250, 225, 0.25);
+    border-radius: 45%;
+}
+
+.anotherCloud {
+    width: 250px;
+    height: 40px;
+    position: absolute;
+    z-index: -3;
+    top: 8em;
+    left: 70%;
+    background-color: rgba(250, 250, 225, 0.25);
+    border-radius: 45%;
+}
+
+.text-align h1{
+    padding-left: 200px;
+}
+
+
+.text-align p{
+    padding-left: 400px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Traffic lights - Kakko</title>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/traffic-lights.js"></script>
+</head>
+<body>
+
+<div class="controls">
+    <button id="reset">Reset</button>
+    <br>
+    <button id="greenLight">Green light!</button>
+    <button id="redLight">Red light!</button>
+    <button id="blinkYellow">Careful!</button>
+    <br>
+    <button id="topToggle">Change to color of TOP to:</button>
+    <input id="topInput" placeholder="red">
+    <br>
+    <button id="midToggle">Change to color of MID to:</button>
+    <input id="midInput" placeholder="yellow">
+    <br>
+    <button id="btmToggle">Change to color of BOTTOM to:</button>
+    <input id="btmInput" placeholder="green">
+</div>
+
+<div class="skybox">
+
+    <div class="moon">
+        <div class="actualMoon moon-shadow">
+        </div>
+    </div>
+
+    <div class="cloud"></div>
+    <div class="anotherCloud"></div>
+
+    <div class="content">
+        <div class="trafficLight">
+            <div class="trafficLightBox push">
+                <div class="circleBase shadow" id="topLight"></div>
+                <div class="circleBase shadow" id="midLight"></div>
+                <div class="circleBase shadow" id="btmLight"></div>
+            </div>
+            <div class="trafficLightPole push">
+                <div class="actualPole"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="street">
+        <div class="actualStreet">
+            <div class="text-align">
+                <h1>Traffic Lights!</h1>
+                <p>Anu Kakko</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="hills hill-shadow"></div>
+    <div class="leftHills hill-shadow"></div>
+</div>
+</body>
+</html>
