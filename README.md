@@ -3,3 +3,4 @@
 
 * Liikennevalot
 * Digital Signage
+* Bingo
