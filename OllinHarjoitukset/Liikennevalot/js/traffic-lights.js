@@ -28,47 +28,47 @@ const setTop = () => {
     setColor(topLight, topInput.value);
 };
 
-function setMid() {
+const setMid = () => {
     setColor(midLight, midInput.value);
-}
+};
 
-function setBtm() {
+const setBtm = () => {
     setColor(btmLight, btmInput.value);
-}
+};
 
-function reset() {
+const reset = () => {
     stop = true;
     setColor(btmLight, '');
     setColor(midLight, '');
     setColor(topLight, '');
-}
+};
 
-function setMidYellow() {
+const setMidYellow = () => {
     setColor(midLight, 'yellow');
-}
+};
 
-function setTopRed() {
+const setTopRed = () => {
     setColor(topLight, 'red');
-}
+};
 
-function setBtmGreen() {
+const setBtmGreen = () => {
     setColor(btmLight, 'green');
-}
+};
 
-function setTopBlack() {
+const setTopBlack = () => {
     setColor(topLight, 'black');
-}
+};
 
-function setMidBlack() {
+const setMidBlack = () => {
     setColor(midLight, 'black');
-}
+};
 
-function setBtmBlack() {
+const setBtmBlack = () => {
     setColor(btmLight, 'black');
-}
+};
 
 
-function greenLight() {
+const greenLight = () => {
     setTopRed();
     setMidBlack();
     setBtmBlack();
@@ -80,9 +80,9 @@ function greenLight() {
     setTimeout(setMidBlack, 2000);
     setTimeout(setBtmGreen, 2000);
 
-}
+};
 
-function redLight() {
+const redLight = () => {
     setBtmGreen();
     setMidBlack();
     setTopBlack();
@@ -92,9 +92,9 @@ function redLight() {
 
     setTimeout(setTopRed, 3000);
     setTimeout(setMidBlack, 3000);
-}
+};
 
-function blinkYellow() {
+const blinkYellow = () => {
     if (stop === false) {
         setMidBlack();
         setTimeout(() => {
@@ -103,16 +103,16 @@ function blinkYellow() {
     } else {
         clearInterval(blinkYellow);
     }
-}
+};
 
-function outOfOrder() {
+const outOfOrder = () => {
     stop = false;
     setBtmBlack();
     setMidBlack();
     setTopBlack();
     setInterval(blinkYellow, 2000);
 
-}
+};
 
 
 topToggle.addEventListener('click', setTop);
