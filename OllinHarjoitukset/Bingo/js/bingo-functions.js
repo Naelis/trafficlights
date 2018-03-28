@@ -935,7 +935,10 @@ const createTable = () => {
     if ((widthInput.value && heightInput.value) && (widthInput.value > 0 && heightInput.value > 0)) {
         generateNumbers();
         createBingoCard(widthInput.value, heightInput.value);
+        // Printing message to user defining what has been input
+        message.innerHTML = '<h4> Generating table based on: ' + widthInput.value + ' columns and ' + heightInput.value + ' rows.</h4>';
     } else {
+        // Tell user to input values, if values were missing or incorrect
         message.innerHTML = '<h4>Please insert values in both fields. (ノಠ ∩ಠ)ノ彡( o°o)</h4>';
     }
 };
